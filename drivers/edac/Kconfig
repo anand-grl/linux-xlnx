@@ -565,4 +565,14 @@ config EDAC_VERSAL
 	  for debugging purposes.
 
 
+config EDAC_VERSALNET
+	bool "AMD Versal NET EDAC"
+	depends on CDX_CONTROLLER
+	help
+	  Support for error detection and correction on the AMD Versal NET DDR
+	  memory controller.
+
+	  The memory controller supports single bit error correction, double bit
+	  error detection. Report various errors to the userspace.
+
 endif # EDAC
