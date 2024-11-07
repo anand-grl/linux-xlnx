@@ -568,6 +568,7 @@ config EDAC_VERSAL
 config EDAC_VERSALNET
 	bool "AMD Versal NET EDAC"
 	depends on CDX_CONTROLLER
+	default y
 	help
 	  Support for error detection and correction on the AMD Versal NET DDR
 	  memory controller.
