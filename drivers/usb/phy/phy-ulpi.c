@@ -215,7 +215,7 @@ static int ulpi_set_host(struct usb_otg *otg, struct usb_bus *host)
 	struct usb_phy *phy = otg->usb_phy;
 	unsigned int flags = usb_phy_io_read(phy, ULPI_IFC_CTRL);
 	
-	pr_info("anand: %d\n", host); //TO_BE_REMOVED
+	pr_err("usb mode: %d\n", host) //TO_BE_REMOVED
 	host = 0; //TO_BE_REMOVED
 
 	if (!host) {
